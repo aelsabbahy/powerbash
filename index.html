@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Powerbash by napalm255</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Powerbash</h1>
+        <h2>Powerline-style Bash prompt in pure Bash script</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/napalm255/powerbash/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/napalm255/powerbash/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/napalm255/powerbash" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="powerbash" class="anchor" href="#powerbash" aria-hidden="true"><span class="octicon octicon-link"></span></a>powerbash</h1>
+
+<p>Powerline-style Bash prompt in pure Bash script. </p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Git branch: display current git branch name, or short SHA1 hash when the head is detached</li>
+<li>Git branch: display "+" symbol when current branch is changed but uncommited</li>
+<li>Git branch: display "⇡" symbol and the difference in the number of commits when the current branch is ahead of remote</li>
+<li>Git branch: display "⇣" symbol and the difference in the number of commits when the current branch is behind of remote</li>
+<li>Username displayed</li>
+<li>Hostname displayed only when SSH'd</li>
+<li>Color code for root</li>
+<li>Color code for sudo session</li>
+<li>Color code with exit code for the previously failed command</li>
+<li>Color code with jobs count</li>
+<li>Directory shortening ('/some/.../long/path' or '..me/long/path')</li>
+<li>Fast execution (no noticable delay)</li>
+<li>No need for patched fonts</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Download the Bash script</p>
+
+<pre><code>curl -L https://raw.github.com/napalm255/powerbash/master/powerbash.sh &gt; ~/.powerbash.sh
+</code></pre>
+
+<p>And source it in your <code>.bashrc</code> for your user account</p>
+
+<pre><code>source ~/.powerbash.sh
+</code></pre>
+
+<p>or for a global installation create a soft link in /etc/profiles.d</p>
+
+<pre><code>ln -s /etc/profiles.d/powerbash.sh ./powerbash.sh
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
